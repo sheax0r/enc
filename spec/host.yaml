@@ -1,0 +1,7 @@
+---
+parameters:
+  P2: value2
+classes:
+  C2: 
+    key1: value1
+  C3: {}

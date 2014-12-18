@@ -1,0 +1,6 @@
+---
+parameters:
+  P1: value1
+classes:
+  C1: {}
+  C2: {}

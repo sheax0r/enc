@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+$: << File.join(File.dirname(__FILE__), '..', 'lib') 
+require 'enc'
+require 'enc/env'
+require 'enc/url_provider'
+
+# Load environment 
+Env.env!
+
+# Load user scripts
+load "/etc/enc/user.rb" if File.exists? "/etc/enc/user.rb"
+
+# Generate manifest
+puts Enc.manifest.to_yaml
