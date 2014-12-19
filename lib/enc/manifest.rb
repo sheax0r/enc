@@ -42,7 +42,7 @@ module Enc
     end
 
     def file(role)
-      "#{Enc.template_dir}/#{role}.yaml"
+      "#{Enc.template_dir}/#{role}.yml"
     end
   end
 
