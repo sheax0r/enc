@@ -7,4 +7,4 @@ require 'enc/url_provider'
 load "/etc/enc/user.rb" if File.exists? "/etc/enc/user.rb"
 
 # Generate manifest
-puts Enc.manifest.to_yaml
+puts Enc.manifest(ARGV[0]).to_yaml
