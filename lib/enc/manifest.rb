@@ -1,3 +1,4 @@
+require 'erb'
 require 'yaml'
 
 # http://stackoverflow.com/questions/9381553/ruby-merge-nested-hash
@@ -34,7 +35,7 @@ module Enc
     end
 
     def manifests 
-      files.map{ |f| YAML.load(File.read(f)) }
+      files.map{ |f| YAML.load(ERB.new(File.read(f)).result(binding)) }
     end
 
     def files
