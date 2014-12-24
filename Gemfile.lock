@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    enc (0.0.2)
+    enc (0.0.4)
 
 GEM
   remote: https://rubygems.org/

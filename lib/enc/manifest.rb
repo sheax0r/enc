@@ -14,7 +14,7 @@ module Enc
     attr_accessor :role_provider
     attr_accessor :template_dir
 
-    template_dir = '/etc/enc/manifests'
+    Enc.template_dir = '/etc/enc/manifests'
 
     # Generate a manifest for the given host
     def manifest(hostname)
